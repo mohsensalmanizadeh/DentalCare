@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Dm Sans";
+  src: url(../public/fonts/DMSans_18pt-Bold.ttf) format("TruType");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dm Sans";
+  src: url(../public/fonts/DMSans_18pt-Italic.ttf) format("TruType");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Dm Sans";
+  src: url(../public/fonts/DMSans_18pt-Light.ttf) format("TruType");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dm Sans";
+  src: url(../public/fonts/DMSans_18pt-Medium.ttf) format("TruType");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dm Sans";
+  src: url(../public/fonts/DMSans_18pt-Thin.ttf) format("TruType");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dm Sans";
+  src: url(../public/fonts/DMSans_24pt-Light.ttf) format("TruType");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    font-family: "Dm Sans";
+    font-weight: 500;
+  }
+}
+
+@theme {
+  --breakpoint-sl: 450px;
+}

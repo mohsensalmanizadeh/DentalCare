@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>DentalCare</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Header -->
+
+    <header
+      class="w-[95%] mx-auto py-4 grid grid-cols-2 justify-between items-center gap-2 lg:border-none"
+    >
+      <section
+        class="col-span-2 flex gap-3 bg-[#EFF6FF] items-center justify-between border-b border-[#C2D1FF] pb-5 lg:border-none lg:bg-transparent"
+      >
+        <div class="flex gap-2">
+          <!-- Menu Icon -->
+          <button class="z-50 cursor-pointer lg:hidden" id="menuBtn">
+            <i class="fa-solid fa-bars text-2xl sl:text-3xl" id="menuIcon"></i>
+          </button>
+          <!-- Logo -->
+          <img
+            src="./public/image/Logo.png"
+            alt="Logo"
+            class="w-21.25 sl:w-30 z-50 sm:w-35 shrink-0"
+          />
+        </div>
+
+        <!-- Search Box Mobile -->
+        <div class="sm:w-75 min-w-0 lg:hidden">
+          <form
+            action="#"
+            class="relative flex justify-between items-center gap-2"
+          >
+            <input
+              type="search"
+              placeholder="Search In here"
+              class="w-full bg-white p-2 rounded-full outline-blue-300"
+            />
+            <button
+              class="absolute top-1/2 -translate-1/2 -right-2 bg-[#3366FF] py-1 px-2 text-white rounded-2xl"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+
+        <ul class="hidden lg:flex items-center gap-6 shrink-0">
+          <li class="flex items-center gap-2 font-light">
+            <img
+              src="./public/icon/location.png"
+              alt="location"
+              class="w-5 h-6"
+            />
+            St. Sanguin Number 40
+          </li>
+
+          <li class="flex items-center gap-2 font-light">
+            <img src="./public/icon/phone.png" alt="phone" class="w-5 h-5" />
+            +1234 - 4567 - 890
+          </li>
+        </ul>
+      </section>
+
+      <!--  Mobile Navigation -->
+      <nav
+        id="navbar"
+        class="absolute left-0 top-0 h-screen bg-[#EFF6FF] w-[75vw] max-w-[18rem] sm:max-w-120 pt-20 z-40 border-r border-[#c2d1ff5e] flex flex-col -translate-x-full transition-transform duration-300 lg:static lg:flex-row lg:h-auto lg:bg-transparent lg:border-none lg:p-0 lg:translate-x-0 lg:w-full lg:hidden"
+      >
+        <ul class="flex flex-col gap-3 lg:flex-row lg:gap-4">
+          <li
+            class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+          >
+            <a href="#">HOME</a>
+          </li>
+          <li
+            class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+          >
+            <a href="#">ABOUT US</a>
+          </li>
+          <li
+            class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+          >
+            <a href="#">SERVICES</a>
+          </li>
+          <li
+            class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+          >
+            <a href="#">PAGES</a>
+          </li>
+          <li
+            class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+          >
+            <a href="#">BLOG</a>
+          </li>
+          <li
+            class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+          >
+            <a href="#">CONTACT</a>
+          </li>
+
+          <li>
+            <ul class="pt-5 flex flex-col gap-4 sm:flex-row sm:gap-2">
+              <li class="pl-5 flex gap-2 font-light lg:hidden">
+                <img
+                  src="./public/icon/location.png"
+                  alt="location"
+                  class="w-5 h-6"
+                />
+                St. Sanguin Number 40
+              </li>
+              <li class="pl-5 flex gap-2 font-light lg:hidden">
+                <img
+                  src="./public/icon/phone.png"
+                  alt="phone"
+                  class="w-5 h-5"
+                />
+                +1234 - 4567 - 890
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button
+          class="mt-10 py-3.5 px-7 bg-[#3366FF] mx-auto text-white text-lg font-semibold rounded-full lg:hidden"
+        >
+          <a href="#">APPOINTMENT</a>
+        </button>
+      </nav>
+
+      <!-- Section Menu & Search Box -->
+      <section
+        class="lg:flex col-span-2 items-center justify-between mt-5 bg-[#C7F0FD] p-5 rounded-full hidden"
+      >
+        <div class="block!">
+          <!-- Desktop Navigation -->
+          <nav class="flex">
+            <ul class="flex flex-col gap-3 lg:flex-row lg:gap-4">
+              <li
+                class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+              >
+                <a href="#">HOME</a>
+              </li>
+              <li
+                class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+              >
+                <a href="#">ABOUT US</a>
+              </li>
+              <li
+                class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+              >
+                <a href="#">SERVICES</a>
+              </li>
+              <li
+                class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+              >
+                <a href="#">PAGES</a>
+              </li>
+              <li
+                class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+              >
+                <a href="#">BLOG</a>
+              </li>
+              <li
+                class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
+              >
+                <a href="#">CONTACT</a>
+              </li>
+
+              <ul class="pt-5 flex flex-col gap-4 sm:flex-row sm:gap-2">
+                <li class="pl-5 flex gap-2 font-light lg:hidden">
+                  <img
+                    src="./public/icon/location.png"
+                    alt="location"
+                    class="w-5 h-6"
+                  />
+                  St. Sanguin Number 40
+                </li>
+                <li class="pl-5 flex gap-2 font-light lg:hidden">
+                  <img
+                    src="./public/icon/phone.png"
+                    alt="phone"
+                    class="w-5 h-5"
+                  />
+                  +1234 - 4567 - 890
+                </li>
+              </ul>
+            </ul>
+
+            <button
+              class="mt-10 py-3.5 px-7 bg-[#3366FF] mx-auto text-white text-lg font-semibold rounded-full lg:hidden"
+            >
+              <a href="#">APPOINTMENT</a>
+            </button>
+          </nav>
+        </div>
+        <!-- Search Box Desktop -->
+        <div class="w-75 hidden lg:block">
+          <form
+            action="#"
+            class="relative flex justify-between items-center gap-2"
+          >
+            <input
+              type="search"
+              placeholder="Search In here"
+              class="w-full bg-white p-3 rounded-full outline-blue-300"
+            />
+            <button
+              class="absolute top-1/2 -translate-1/2 -right-2 bg-[#3366FF] py-1 px-2 text-white rounded-2xl"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </header>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
