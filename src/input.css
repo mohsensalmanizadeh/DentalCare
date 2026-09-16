@@ -2,53 +2,71 @@
 
 @font-face {
   font-family: "Dm Sans";
-  src: url(../public/fonts/DMSans_18pt-Bold.ttf) format("TruType");
+  src: url(../public/fonts/DMSans_18pt-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Dm Sans";
-  src: url(../public/fonts/DMSans_18pt-Italic.ttf) format("TruType");
+  src: url(../public/fonts/DMSans_18pt-Italic.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Dm Sans";
-  src: url(../public/fonts/DMSans_18pt-Light.ttf) format("TruType");
+  src: url(../public/fonts/DMSans_18pt-Light.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Dm Sans";
-  src: url(../public/fonts/DMSans_18pt-Medium.ttf) format("TruType");
+  src: url(../public/fonts/DMSans_18pt-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Dm Sans";
-  src: url(../public/fonts/DMSans_18pt-Thin.ttf) format("TruType");
+  src: url(../public/fonts/DMSans_18pt-Thin.ttf) format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Dm Sans";
-  src: url(../public/fonts/DMSans_24pt-Light.ttf) format("TruType");
+  src: url(../public/fonts/DMSans_24pt-Light.ttf) format("truetype");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../public/fonts/PlusJakartaSans-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../public/fonts/PlusJakartaSans-Medium.ttf) format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
 @layer base {
   body {
-    font-family: "Dm Sans";
+    font-family: "Plus Jakarta Sans";
     font-weight: 500;
   }
 }
 
 @theme {
+  --font-dm: "DM Sans", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+
+  --breakpoint-mini: 320px;
   --breakpoint-sl: 450px;
 }
