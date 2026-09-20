@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
     <link rel="stylesheet" href="./src/output.css" />
@@ -14,10 +18,10 @@
     <!-- Header -->
 
     <header
-      class="w-[95%] mx-auto py-4 grid grid-cols-2 justify-between items-center gap-2 lg:border-none xl:w-[80%]"
+      class="mx-auto grid grid-cols-2 justify-between items-center gap-2 lg:border-none xl:w-[80%] lg:px-6"
     >
       <section
-        class="col-span-2 flex gap-3 bg-[#EFF6FF] items-center justify-between border-b border-[#C2D1FF] pb-5 lg:border-none lg:bg-transparent"
+        class="col-span-2 flex px-4 gap-3 bg-[#EFF6FF] py-4 items-center justify-between border-b border-[#C2D1FF] pb-5 lg:border-none lg:bg-transparent"
       >
         <div class="flex gap-2">
           <!-- Menu Icon -->
@@ -141,7 +145,7 @@
         <div class="block!">
           <!-- Desktop Navigation -->
           <nav class="flex">
-            <ul class="flex flex-col gap-3 lg:flex-row lg:gap-4">
+            <ul class="flex gap-8">
               <li
                 class="border-b border-[#C2D1FF] pl-5 py-3 text-lg font-bold lg:border-none lg:text-3.75 lg:font-medium lg:p-0"
               >
@@ -223,7 +227,7 @@
 
     <!--  Start Main -->
 
-    <main class="w-[95%] mx-auto xl:w-[80%]">
+    <main class="w-[95%] mx-auto xl:w-[80%] mt-8 px-4">
       <!-- Hero Section -->
       <section
         class="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between"
@@ -276,8 +280,41 @@
           />
         </div>
       </section>
+
+      <!--  Section Slider -->
+
+      <section class="mt-15">
+        <h2
+          class="text-center text-[#FF9140] font-bold text-lg py-18 sm:text-2xl"
+        >
+          our clinic partners
+        </h2>
+        <div class="swiper w-full h-30">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+              <img src="./public/image/logo-two.png" alt="Brand" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/image/logo-three.png" alt="Brand" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/image/logo-One.png" alt="Brand" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/image/logo-four.png" alt="Brand" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/image/logo-five.png" alt="Brand" />
+            </div>
+            </div>
+        </div>
+      </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./src/script.js"></script>
   </body>
 </html>
