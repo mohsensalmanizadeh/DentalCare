@@ -255,11 +255,14 @@
             class="flex justify-evenly gap-3 items-center pt-5 sm:justify-start sm:gap-20 lg:gap-10"
           >
             <button
-              class="bg-[#3366FF] text-white sl:py-3 sl:px-4 rounded-full mini:py-1.5 mini:px-2.5 mini:text-sm"
+              class="bg-[#3366FF] text-white sl:py-3 sl:px-4 rounded-full mini:py-2 mini:px-2.5 mini:text-[12px]"
             >
               <a href="#">CONTACT US</a>
             </button>
-            <a href="#" class="flex gap-2 items-center mini:text-sm sl:text-lg">
+            <a
+              href="#"
+              class="flex gap-2 items-center mini:text-[12px] sl:text-lg"
+            >
               <img
                 src="./public/icon/play.png"
                 alt="videoPlay"
@@ -276,7 +279,7 @@
           <img
             src="./public/image/Group 17.png"
             alt="Dr"
-            class="w-103.75 h-90.75 sm:w-156.25 sm:h-162 lg:w-162 lg:h-140"
+            class="w-full h-auto"
           />
         </div>
       </section>
@@ -309,7 +312,63 @@
             <div class="swiper-slide">
               <img src="./public/image/logo-five.png" alt="Brand" />
             </div>
-            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  Section About Me -->
+      <section
+        class="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between"
+      >
+        <!-- Image -->
+        <div class="basis-1/2">
+          <img
+            src="./public/image/Group 22.png"
+            alt="img"
+            class="w-full h-auto"
+          />
+        </div>
+
+        <div class="flex flex-col gap-4 basis-1/2 lg:gap-10">
+          <p class="text-[#FF9140] text-base font-bold md:text-xl">About Us</p>
+          <h2
+            class="mini:text-2xl text-4xl font-semibold lg:text-5xl leading-10 lg:leading-17"
+          >
+            your
+            <span class="text-[#3366ff]">trusted partner</span> for dental Healt
+          </h2>
+          <p class="text-sm font-light md:text-lg">
+            Our team is dedicated to providing the best possible dental care for
+            you. A healthy smile is a happy smile – we help you achieve both!
+          </p>
+
+          <ul class="list-none grid grid-cols-1 md:grid-cols-2 gap-3">
+            <li class="flex items-center gap-2">
+              <img src="public/icon/flash.png" alt="" class="w-4 h-4" />
+              Modern Equipment
+            </li>
+
+            <li class="flex items-center gap-2">
+              <img src="public/icon/flash.png" alt="" class="w-4 h-4" />
+              Comfortable Clinic
+            </li>
+
+            <li class="flex items-center gap-2">
+              <img src="public/icon/flash.png" alt="" class="w-4 h-4" />
+              Easy Online Appointment
+            </li>
+
+            <li class="flex items-center gap-2">
+              <img src="public/icon/flash.png" alt="" class="w-4 h-4" />
+              Always Monitored
+            </li>
+          </ul>
+
+          <button class="text-left text-[#5C85FF] text-lg font-semibold">
+            <a href="#" class="flex gap-2 items-center">
+              Read More <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </button>
         </div>
       </section>
     </main>
