@@ -1,7 +1,7 @@
 //  Menu Berger
-const menuBtn = document.querySelector("#menuBtn");
-const menuIcon = document.querySelector("#menuIcon");
-const navbar = document.querySelector("#navbar");
+const menuBtn = document.getElementById("menuBtn");
+const menuIcon = document.getElementById("menuIcon");
+const navbar = document.getElementById("navbar");
 
 menuBtn.addEventListener("click", () => {
   navbar.classList.toggle("-translate-x-full");
@@ -15,11 +15,10 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-
 //  Swiper JS
 
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
   loop: true,
 
   slidesPerView: 2,
@@ -37,15 +36,15 @@ const swiper = new Swiper('.swiper', {
   },
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
   },
 });
