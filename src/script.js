@@ -17,7 +17,7 @@ menuBtn.addEventListener("click", () => {
 
 //  Swiper JS
 
-const swiper = new Swiper(".swiper", {
+const partnersSwiper = new Swiper(".partnersSwiper", {
   direction: "horizontal",
   loop: true,
 
@@ -33,18 +33,5 @@ const swiper = new Swiper(".swiper", {
     1024: {
       slidesPerView: 5,
     },
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });

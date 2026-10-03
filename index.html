@@ -292,7 +292,7 @@
         >
           our clinic partners
         </h2>
-        <div class="swiper w-full h-30">
+        <div class="swiper partnersSwiper w-full h-30">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -536,9 +536,67 @@
           </div>
         </div>
       </section>
+
+      <!-- Section OUR BEST DENTIST -->
+
+      <section class="my-10">
+        <div>
+          <p class="text-[#FF9140] text-sm md:text-lg font-bold text-center">
+            OUR BEST DENTIST
+          </p>
+          <h2 class="font-bold text-center text-4xl lg:text-5xl leading-17">
+            Dentist For Specialized And
+            <span class="text-[#3366FF]">Experienced Dentistry</span>
+          </h2>
+        </div>
+
+        <div>
+          <section class="relative w-full px-12 py-10 sm:px-16">
+            <div class="doctorsSwiper swiper !pt-10 !pb-14">
+              <div class="swiper-wrapper" id="slides"></div>
+
+              <!-- دات‌ها: استایل با variant های descendant تیلویند -->
+              <div
+                class="swiper-pagination !bottom-0 [&_.swiper-pagination-bullet]:!h-2 [&_.swiper-pagination-bullet]:!w-2 [&_.swiper-pagination-bullet]:!bg-dot [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet]:!transition-all [&_.swiper-pagination-bullet-active]:!w-6 [&_.swiper-pagination-bullet-active]:!rounded-md [&_.swiper-pagination-bullet-active]:!bg-accent"
+              ></div>
+            </div>
+
+            <!-- فلش‌ها -->
+            <button
+              class="btn-prev absolute left-3 top-1/2 grid h-6 w-6 -translate-y-1/2 place-items-center rounded-full border border-brand text-brand hover:bg-brand hover:text-white"
+              aria-label="Previous"
+            >
+              <svg
+                class="h-3 w-3"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+              >
+                <path d="M15 5l-7 7 7 7" />
+              </svg>
+            </button>
+            <button
+              class="btn-next absolute right-3 top-1/2 grid h-6 w-6 -translate-y-1/2 place-items-center rounded-full border border-brand text-brand hover:bg-brand hover:text-white"
+              aria-label="Next"
+            >
+              <svg
+                class="h-3 w-3"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </section>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./components/sliders.js"></script>
     <script src="./src/script.js"></script>
   </body>
 </html>
